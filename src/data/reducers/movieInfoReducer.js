@@ -7,7 +7,7 @@ const movieInfoSlice = createSlice({
 	},
 	reducers: {
 		setMovie(state, action) {
-			return { ...state, movie: [...action.payload] };
+			return { ...state, movie: { ...action.payload } };
 			// state.movie = action.payload
 		},
 	},

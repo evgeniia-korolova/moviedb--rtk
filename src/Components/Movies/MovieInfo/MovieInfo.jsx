@@ -15,8 +15,8 @@ const MovieInfo = () => {
 
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`)
-        // .then(response=> dispatch(setMovie(response.data.results)) ) 
-        .then(response => console.log(response.data))
+        .then(response=> dispatch(setMovie(response.data.results)) ) 
+        // .then(response => console.log(response.data))
     }, [])
 
     return (

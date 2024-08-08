@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/moviedb--rtk/static/css/main.f1dd6363.css",
+    "main.js": "/moviedb--rtk/static/js/main.6ed099fa.js",
+    "index.html": "/moviedb--rtk/index.html",
+    "main.f1dd6363.css.map": "/moviedb--rtk/static/css/main.f1dd6363.css.map",
+    "main.6ed099fa.js.map": "/moviedb--rtk/static/js/main.6ed099fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1dd6363.css",
+    "static/js/main.6ed099fa.js"
+  ]
+}

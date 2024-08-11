@@ -11,7 +11,7 @@ const MovieInfo = () => {
     let movieId = useParams();
     let dispatch = useDispatch()
 
-     const API_KEY = 'd4ef1072498b844582d90d6ade6ff65f';   
+    const API_KEY = 'd4ef1072498b844582d90d6ade6ff65f';   
 
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`)
@@ -22,6 +22,8 @@ const MovieInfo = () => {
     return (
         <div>
             <h2>Title</h2>
+            {/* <p>Origin country : {movie.origin_country[0]}</p> */}
+            <p>Origin country : {movie.title}</p>
         </div>
     )
 }

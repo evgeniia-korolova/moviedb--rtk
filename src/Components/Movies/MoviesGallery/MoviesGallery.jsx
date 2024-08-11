@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setMovies } from "../../../data/reducers/moviesReducer";
 import MovieCard from "../MovieCard/MovieCard";
+// import { getAllMovies } from "../../../services/MoviesService";
+import s from './MoviesGallery.module.scss';
 
 
 const MoviesGallery = () => {
@@ -15,10 +17,20 @@ const MoviesGallery = () => {
 
     useEffect(() => {
         axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&page=${page}&with_genres=12`)
-        .then(response=> dispatch(setMovies(response.data.results)) )
+            .then(response => {
+                console.log(response.data.results)
+                dispatch(setMovies(response.data.results))
+            })
     }, [])
+
+    // useEffect(() => {
+    //     getAllMovies()
+    //     .then(response=> console.log(response.data.results) )
+    // }, [])
+
+
     return (
-        <div>MoviesGallery
+        <div className={s.MoviesGallery}>
             {movies.map(movie => <MovieCard key={movie.id} movie={movie} />)}
         </div>
     )

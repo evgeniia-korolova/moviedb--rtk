@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import s from './MovieCard.module.scss';
 
 
 const MovieCard = ({ movie }) => {
@@ -6,13 +7,16 @@ const MovieCard = ({ movie }) => {
     let navigate = useNavigate();
 
     const showMoreHandler = () => {
-        navigate(`movie/${movie.id}`)
+        navigate(`/movie/${movie.id}`)
+        console.log(movie.id)
     }
+
+    const imgUrl = 'https://tmdb.org/t/p/w500';
     
     let imgSrc = movie.backdrop_path
-    let path = `https://themoviedb${imgSrc}`
+    let path = `${imgUrl}${imgSrc}`
     return (
-        <div>
+        <div className={s.MovieCard}>
             <div>
                 <img src={path} alt={movie.title} />
             </div>

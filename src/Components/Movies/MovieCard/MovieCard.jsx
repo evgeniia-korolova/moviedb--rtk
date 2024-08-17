@@ -17,7 +17,7 @@ const MovieCard = ({ movie }) => {
     let path = `${imgUrl}${imgSrc}`
     return (
         <div className={s.MovieCard}>
-            <div>
+            <div className={s.MovieCardImg}>
                 <img src={path} alt={movie.title} />
             </div>
             <h2>{movie.title}</h2>

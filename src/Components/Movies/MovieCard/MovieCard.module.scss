@@ -1,4 +1,11 @@
 .MovieCard {
     max-width: 45%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        margin-top: auto;
+        cursor: pointer;
+    }
 }

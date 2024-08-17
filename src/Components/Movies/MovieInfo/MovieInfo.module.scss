@@ -1,0 +1,39 @@
+.MovieInfo {
+    display: flex;
+    align-items: center;
+    width: 100%;    
+    // max-width: 70%;
+
+    .MovieInfoImg {
+        // width: 50%;
+       
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .MovieInfoDescription {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        max-width: 60%;
+        gap: 20px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+
+            li {
+                margin-right: 30px;
+            }
+        }
+    }
+
+}

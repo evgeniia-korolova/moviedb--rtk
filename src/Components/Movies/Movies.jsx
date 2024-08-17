@@ -11,10 +11,13 @@ const Movies = () => {
             <nav>
                 <h2>Genres</h2>
             </nav>
+            <div>
+
             <Routes>
                 <Route path="/" element={<MoviesGallery />} />                
                 <Route path='/movie/:movieId' element={<MovieInfo/>}/>
             </Routes>
+            </div>
             
             
         </div>

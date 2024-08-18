@@ -1,0 +1,12 @@
+.MoviesGallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 70vw;
+  padding: 30px;
+  border: 1px solid green;
+  border-radius: 10px;
+  gap: 20px;
+  justify-content: space-around;
+  overflow-y: scroll;
+  height: 100%;
+}/*# sourceMappingURL=MoviesGallery.module.css.map */

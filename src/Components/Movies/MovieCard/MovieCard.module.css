@@ -1,0 +1,19 @@
+.MovieCard {
+  max-width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.MovieCard button {
+  margin-top: auto;
+  cursor: pointer;
+}
+.MovieCard .MovieCardImg img {
+  width: 100%;
+}
+.MovieCard h2 {
+  margin-bottom: 30px;
+}
+.MovieCard p {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=MovieCard.module.css.map */

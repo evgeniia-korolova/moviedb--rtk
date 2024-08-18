@@ -24,7 +24,7 @@ const MovieCard = ({ movie }) => {
             <p>{movie.original_language}</p>
             <p>{movie.overview}</p>
             <p>{movie.release_date}</p>
-            <button onClick={showMoreHandler} >Show more</button>
+            <button onClick={showMoreHandler} >Show details</button>
         </div>
     )
 }

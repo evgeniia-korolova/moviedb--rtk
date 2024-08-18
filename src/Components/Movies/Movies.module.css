@@ -1,0 +1,16 @@
+.Movies {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100vw;
+  padding: 20px 40px;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 90vh;
+}
+.Movies nav {
+  border: 1px solid green;
+  padding: 30px;
+  border-radius: 10px;
+  width: 30%;
+}/*# sourceMappingURL=Movies.module.css.map */

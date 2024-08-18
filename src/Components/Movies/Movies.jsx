@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import MoviesGallery from "./MoviesGallery/MoviesGallery";
 import MovieInfo from "./MovieInfo/MovieInfo";
 import s from './Movies.module.scss'
@@ -10,6 +10,11 @@ const Movies = () => {
         <div className={s.Movies}>
             <nav>
                 <h2>Genres</h2>
+                <button>Action</button>
+                <button>Adventure</button>
+                <button>Science fiction</button>
+                <button>Fantasy</button>
+                <button>Drama</button>
             </nav>
             <div>
 

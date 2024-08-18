@@ -21,8 +21,8 @@ const MovieCard = ({ movie }) => {
                 <img src={path} alt={movie.title} />
             </div>
             <h2>{movie.title}</h2>
-            <p>{movie.original_language}</p>
-            <p>{movie.overview}</p>
+            <p>Language : {movie.original_language}</p>
+            {/* <p>{movie.overview}</p> */}
             <p>{movie.release_date}</p>
             <button onClick={showMoreHandler} >Show details</button>
         </div>

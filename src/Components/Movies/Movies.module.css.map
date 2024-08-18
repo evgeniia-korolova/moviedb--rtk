@@ -1,1 +1,1 @@
-{"version":3,"sources":["Movies.module.scss","Movies.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,SAAA;EACA,gBAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;EACA,6BAAA;EACA,YAAA;ACCJ;ADCI;EACI,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,UAAA;ACCR","file":"Movies.module.css"}
+{"version":3,"sources":["Movies.module.scss","Movies.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,SAAA;EACA,gBAAA;EACA,YAAA;EACA,kBAAA;EACA,cAAA;EACA,6BAAA;EACA,YAAA;ACCJ;ADCI;EACI,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,UAAA;ACCR;ADCQ;EACI,cAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;ACCZ","file":"Movies.module.css"}

@@ -2,7 +2,7 @@
 
 const Info = () => {
     return (
-        <h1>Info</h1>
+        <h1>In progress...</h1>
     )
 }
 

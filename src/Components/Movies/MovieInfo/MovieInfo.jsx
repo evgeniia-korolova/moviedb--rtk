@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { setMovie } from '../../../data/reducers/movieInfoReducer';
+import { fetchMovieById } from "../../../services/MoviesService";
 
 import s from './MovieInfo.module.scss';
 
@@ -24,6 +25,20 @@ const MovieInfo = () => {
             }) 
         // .then(response => console.log(response.data))
     }, [movieId, dispatch])
+    
+//     useEffect(() => {
+//     const getMovie = async () => {
+//       try {
+//           const data = await fetchMovieById(movieId);
+//           console.log(data)
+//         dispatch(setMovie(data));
+//       } catch (error) {
+//         console.error("Failed to fetch movie:", error);
+//       }
+//     };
+
+//     getMovie();
+//   }, [dispatch, movieId]);
 
     const imgUrl = 'https://tmdb.org/t/p/w500';
     

@@ -1,0 +1,19 @@
+.FavoriteCard {
+  max-width: 45%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.FavoriteCard button {
+  margin-top: auto;
+  cursor: pointer;
+}
+.FavoriteCard .FavoriteCardImg img {
+  width: 100%;
+}
+.FavoriteCard h2 {
+  margin-bottom: 30px;
+}
+.FavoriteCard p {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=FavoriteCard.css.map */

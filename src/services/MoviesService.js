@@ -1,6 +1,5 @@
 import axios from "axios";
-import { useDispatch, useSelector } from "react-redux";
-import { setMovies } from "../data/reducers/moviesReducer";
+
 
 
 
@@ -9,8 +8,23 @@ const baseUrl = 'https://api.themoviedb.org/3/';
 const imgUrl = 'https://tmdb.org/t/p/w500';
 const API_KEY = 'd4ef1072498b844582d90d6ade6ff65f'; 
 const page = 1;
-// let dispatch = useDispatch();
-// let movies = useSelector((state) => state.movies.movies);
+
+
+export const fetchMovies = async () => {
+	const response = await axios.get(
+		`${baseUrl}discover/movie?api_key=${API_KEY}&page=${page}&with_genres=12`
+	);
+	return response.data;
+};
+
+export const fetchMovieById = async (movieId) => {
+	const response = await axios.get(
+		`${baseUrl}/movie/${movieId}?api_key=${API_KEY}`
+	);
+	return response.data;
+};
+
+
 
 async function getResource(url) {
 	let res = axios.get(url);

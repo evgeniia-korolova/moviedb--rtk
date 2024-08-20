@@ -3,14 +3,15 @@ import { Link, Route, Routes } from 'react-router-dom';
 import s from './App.module.scss';
 
 import Movies from './Components/Movies/Movies';
-import Info from './Components/Info/Info'
+import Favorite from './Components/Info/Favorite';
+
 
 function App() {
   return (
 		<div className={s.App}>
 			<header>
 				<Link to='/'>Movies</Link>
-				<Link to='/info'>Info</Link>
+				<Link to='/favorite'>Favorite</Link>
 			</header>
 			<Routes>
 				<Route
@@ -18,8 +19,8 @@ function App() {
 					element={<Movies />}
 				/>
 				<Route
-					path='/info'
-					element={<Info />}
+					path='/favorite'
+					element={<Favorite />}
         />
         
 			</Routes>

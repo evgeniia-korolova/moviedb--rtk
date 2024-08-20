@@ -9,4 +9,23 @@
     justify-content: space-around;
     overflow-y: scroll;
     height: 100%;
+
+    .showMoreBtn {
+        padding: 10px 20px;
+        border: 2px solid green;
+        border-radius: 10px;
+        background: transparent;
+        color: green;
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            background: green;
+            color: white;
+        }
+    }
 }

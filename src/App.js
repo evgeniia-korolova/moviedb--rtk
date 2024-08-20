@@ -10,8 +10,16 @@ function App() {
   return (
 		<div className={s.App}>
 			<header>
-				<Link to='/'>Movies</Link>
-				<Link to='/favorite'>Favorite</Link>
+				<Link
+					to='/'
+					className={s.link}>
+					Movies
+				</Link>
+				<Link
+					to='/favorite'
+					className={s.link}>
+					Favorite
+				</Link>
 			</header>
 			<Routes>
 				<Route
@@ -21,8 +29,7 @@ function App() {
 				<Route
 					path='/favorite'
 					element={<Favorite />}
-        />
-        
+				/>
 			</Routes>
 		</div>
   );

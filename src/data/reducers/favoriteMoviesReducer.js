@@ -8,7 +8,15 @@ const favoriteMoviesSlice = createSlice({
     },
     reducers: {
         addToFavorite(state, action) {
-            state.favorite.push(action.payload)
+
+            let favoriteMovie = {...action.payload}
+
+            if (!state.favorite.some(movie => movie.id === favoriteMovie.id)) {
+                state.favorite = [...state.favorite, action.payload]
+            } else {
+                return
+            }
+            // state.favorite.push(action.payload)
         },
         removeFromFavorite(state, action) {
             // let { id } = action.payload;

@@ -32,8 +32,10 @@ const MovieCard = ({ movie }) => {
             <p>Language : {movie.original_language}</p>
             {/* <p>{movie.overview}</p> */}
             <p>{movie.release_date}</p>
+            <div className={s.buttonGroup}>
             <button onClick={() => showMoreHandler()} >Show details</button>
             <button onClick={() => addToFavoriteHandler()} >Add to Favorite</button>
+            </div>
         </div>
     )
 }

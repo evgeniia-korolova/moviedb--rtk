@@ -46,7 +46,7 @@ const MoviesGallery = () => {
     return (
         <div className={s.MoviesGallery}>
             {movies.map(movie => <MovieCard key={movie.id} movie={movie} />)}
-            <button onClick={showMoreMoviesHandler}>Show more</button>
+            <button className={s.showMoreBtn} onClick={showMoreMoviesHandler}>Show more</button>
         </div>
     )
 }

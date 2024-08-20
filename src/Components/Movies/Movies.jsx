@@ -9,7 +9,7 @@ const Movies = () => {
     return (
         <div className={s.Movies}>
             <nav>
-                <h2>Genres</h2>
+                {/* <h2>Genres</h2> */}
                 <button>All</button>
                 <button>Action</button>
                 <button>Adventure</button>

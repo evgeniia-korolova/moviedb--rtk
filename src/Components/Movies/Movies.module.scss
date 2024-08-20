@@ -6,7 +6,7 @@
     padding: 20px 40px;
     margin: 0 auto;
     justify-content: space-around;
-    height: 90vh;
+    height: 85vh;
 
     nav {
         border: 1px solid green;
@@ -15,7 +15,10 @@
         width: 30%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+      
+        height: 100%;
+        overflow-y: scroll;
 
         h2 {
             text-align: center;
@@ -25,9 +28,9 @@
         button {
             display: block;
             cursor: pointer;
-            margin: 20px 0;
+            // margin: 20px 0;
             padding: 10px 20px;
-            font-size: 28px;
+            font-size: 20px;
             text-transform: uppercase;            
             border: none;
             border-radius: 10px;
